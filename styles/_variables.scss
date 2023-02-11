@@ -1,0 +1,40 @@
+// z-index
+
+$zindex-base:               0 !default;
+$zindex-base-popover:       20 !default;
+$zindex-base-floating:      30 !default;
+
+$zindex-map-floating:       200 !default;
+
+$zindex-bubble:             300 !default;
+$zindex-bubble-popover:     320 !default;
+
+$zindex-sheet:              400 !default;
+$zindex-sheet-popover:      420 !default;
+
+$zindex-navigator:          500 !default;
+$zindex-dropdown:           1000 !default;
+
+// Primary Colors
+$primary-app:               #002EB4 !default;
+$secondary-app:             #FF6400 !default;
+$white-surface:             #FFFFFF !default;
+
+// Secondary Colors Brand
+$slate-gray:                #425563 !default;
+$olympic-blue:              #298FC2 !default;
+$pigeon-blue:               #ABCAE9 !default;
+$silver-lining:             #D1E1E2 !default;
+
+// Neutral Colors
+$neutral-100:               #1A1919 !default;
+$neutral-90:                #454443 !default;
+$neutral-80:                #676765 !default;
+$neutral-70:                #898987 !default;
+$neutral-60:                #ACABA8 !default;
+$neutral-50:                #CECDCA !default;
+$neutral-40:                #D6D5D3 !default;
+$neutral-30:                #DEDEDC !default;
+$neutral-20:                #E6E6E4 !default;
+$neutral-10:                #F5F5F4 !default;
+$neutral-00:                #FFFFFF !default;

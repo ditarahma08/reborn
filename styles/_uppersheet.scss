@@ -1,0 +1,52 @@
+
+.uppersheet {
+  background: url('/assets/images/uppersheet.png') no-repeat;
+  background-size: cover;
+  min-height: 64px;
+  
+  &-text {
+    font-size: .55rem !important;
+  }
+
+  .button {
+    padding: 4px 6px !important;
+    width: max-content !important;
+    background: #00071A !important;
+    border-color: #00071A !important;
+    font-size: .55rem !important;
+  }
+}
+
+.deep-link-modal {
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: url('/assets/images/deep-link-background.png') no-repeat;
+    background-size: cover;
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  .modal-content {
+    border-radius: 0 !important;
+  }
+
+  .empty-state-container {
+    margin-bottom: 0 !important;
+
+    .image {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .footer {
+    padding-bottom: 0 !important;
+  }
+}

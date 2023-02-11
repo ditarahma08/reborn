@@ -1,0 +1,15 @@
+.alert-car-info {
+  .content {
+    z-index: 1000 !important;
+    border-radius: 8px !important;
+    max-width: 350px !important;
+  }
+
+  .box-alert.--floating {
+    width: 95% !important;
+  }
+
+  .hasBottomSheet{
+    bottom: 23.5rem !important;
+  }
+}

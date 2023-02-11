@@ -1,0 +1,77 @@
+.booking-info {
+  &__title {
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.75px;
+    color: $black-md;
+    margin-bottom: 8px;
+  }
+
+  &__card {
+    max-height: 260px;
+    overflow: hidden auto;
+  }
+}
+
+.cancel-reason {
+  padding-bottom: 100px;
+  background: white;
+  
+  &__title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: $black-xl;
+  }
+
+  &__description {
+    display: flex;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    margin-top: 4px;
+
+    .marker {
+      background: $danger;
+      width: .5rem;
+      height: .5rem;
+      border-radius: 50%;
+      
+      &__loading {
+        border-radius: 50%;
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .form-check {
+    margin: 8px 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: $black-lg;
+  }
+
+  .form-check-input {
+    width: 24px;
+    height: 24px;
+    background-color: $input-bg;
+    border: 0;
+    margin-right: 24px;
+  }
+
+  .form-check-input:checked {
+    background-color: $primary;
+    border-color: $primary; 
+  }
+
+  .form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem $blue-light;
+  }
+}
+
+.cancel-order.box-alert.--floating {
+  width: 29% !important;
+}

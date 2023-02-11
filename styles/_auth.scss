@@ -1,0 +1,96 @@
+.account-info {
+    img {
+        object-fit: cover;
+    }
+    &__info-label {
+        width: 100%;
+
+        span {
+            max-width: 200px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        img {
+            cursor: pointer;
+        }
+    }
+
+    &__info-phone, &__info-otopoints {
+        font-size: $otoklix-font-size-xs;
+    }
+    
+}
+
+.invite-friends {
+    &__title {
+        width: 100%;
+        font-size: $otoklix-font-size-md;
+    }
+
+    &__caption {
+        font-size: $otoklix-font-size-xs;
+    }
+
+    &__icon-coin {
+        font-size: $otoklix-font-size-lg;
+    }
+}
+
+.profile-completeness {
+    font-size: $otoklix-font-size-xxs;
+    cursor: pointer;
+
+    &__progress {
+        width: 100%;
+    }
+
+    .progress {
+        height: 5px;
+    }
+}
+
+.profile-security {
+    font-size: $otoklix-font-size-xs;
+    cursor: pointer;
+}
+
+.modal-referral-success {
+    font-size: $otoklix-font-size-sm;
+
+    img {
+        margin: auto;
+    }
+
+    &__icon-coin {
+        svg {
+            height: 15px !important;
+            width: 15px !important;
+        }
+    }
+}
+
+.login-layout {
+    max-width: 362px;
+}
+
+.phone-number-exist {
+    .form-control {
+        &.is-invalid {
+            border: $warning;
+            color: $warning;
+            background-color: $yellow-light;
+
+            &:focus {
+                box-shadow: 0 0 0 0.25rem rgb(235 158 3/ 25%);
+            }
+        }
+    }
+    
+    .form-text {
+        span {
+            color: $warning !important;
+        }
+    }
+}

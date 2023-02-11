@@ -1,0 +1,840 @@
+.card-order {
+  overflow: hidden;
+  background-color: $blue-light;
+
+  .confirmation-info-wrapper {
+    padding: 0.6rem 1rem;
+
+    .confirmation-info, .time {
+      font-size: 10px;
+      color: $blue;
+    }
+  }
+
+  h5 {
+    color: $title-active;
+    font-weight: 600;
+  }
+
+  .border-radius-top {
+    border-top-right-radius: 0.75rem;
+    border-top-left-radius: 0.75rem;
+  }
+
+  .card-body {
+    position: relative;
+
+    .card-subtitle {
+      color: $label;
+      font-size: $otoklix-font-size-sm;
+      font-weight: 500;
+    }
+
+    .card-image {
+      position: absolute;
+      width: 130px;
+      right: -50px;
+      top: 12px;
+    }
+
+    .toggle-collapse {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      width: px2rem(15);
+      cursor: pointer;
+
+      &.with-button {
+        bottom: 2rem;
+      }
+    }
+
+    .item {
+      color: $label;
+      font-size: $otoklix-font-size-sm;
+      font-weight: 500;
+      margin-bottom: .5rem;
+    }
+
+    .price {
+      color: $title-active;
+      font-size: $otoklix-font-size-sm;
+      font-weight: 500;
+    }
+
+    .total {
+      font-size: 1rem;
+    }
+  }
+}
+
+.card-my-car {
+  background: $offwhite;
+  box-shadow: $card-box-shadow;
+  border-radius: $border-radius-lg;
+  border: none;
+
+  .value {
+    font-size: $otoklix-font-size-xs;
+    color: $placeholder;
+  }
+
+  .badge-image {
+    width: px2rem(14);
+    height: px2rem(20);
+  }
+
+  .car-image {
+    width: px2rem(89);
+  }
+}
+
+.card-my-car.active {
+  background: $blue-light;
+  border: 2px solid $primary;
+  box-sizing: border-box;
+}
+
+.card-promo {
+  padding: 12px;
+  box-shadow: $card-box-shadow;
+  background-color: #F7F7FC;
+  border: 0;
+  border-radius: 12px;
+
+  .card-title {
+    font-size: $otoklix-font-size-sm;
+    color: $title-active;
+    font-weight: 600;
+  }
+
+  .card-subtitle {
+    position: inherit !important;
+    color: $label !important;
+    font-size: $otoklix-font-size-xs !important;
+    font-weight: 400;
+  }
+
+  button {
+    height: max-content;
+    padding: 5px;
+    border-radius: 4px;
+  }
+}
+
+.card-garage-new {
+  border-radius: 24px;
+  background: $white-lg;
+
+  .health-item {
+    display: flex;
+    white-space: nowrap;
+
+    .health-name {
+      text-transform: capitalize;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      flex-grow: 1;
+    }
+  }
+
+  .arrow-collapse {
+    margin-bottom: 1rem;
+  }
+
+  .card-info {
+    padding-bottom: px2rem(40) !important;
+  }
+}
+
+.card-garage-new-button {
+  border: 2px solid $black-xs;
+}
+
+.table-gray-white {
+  .widget-item {
+    padding: px2rem(12);
+  }
+
+  .widget-item:nth-child(odd) {
+    background: $white-lg;
+  }
+}
+
+
+.card-service {
+  width: 240px !important;
+  height: 210px;
+  background: $white-lg;
+  border-radius: $border-radius-xl;
+  border: none;
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .text-date {
+    color: $black-md;
+    font-size: $otoklix-font-size-sm;
+  }
+
+  .text-price {
+    color: $primary;
+    font-size: $otoklix-font-size-md;
+    font-weight: 600;
+  }
+}
+
+.card-add-order {
+  cursor: pointer;
+  width: 100px !important;
+  height: 130px;
+
+  .card-title {
+    margin: px2rem(5) 0 0;
+    color: $white-xl;
+    font-size: $otoklix-font-size-md;
+    font-weight: 600;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.card-ongoing-order {
+  min-width: 255px !important;
+  height: 130px;
+  border: 1px solid $secondary;
+
+  .link-maps {
+    font-weight: normal;
+    font-size: px2rem(10);
+    color: $secondary;
+  }
+
+  .tags {
+    font-weight: 600;
+  }
+
+  .card-title {
+    font-size: $otoklix-font-size-md;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .card-body {
+    padding: px2rem(12) 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+
+  .text-price {
+    font-size: $otoklix-font-size-sm;
+
+    .card-title {
+      cursor: pointer;
+    }
+  }
+
+  .close-icon {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+}
+
+.card-info-otopoints-normal {
+  background: $white-lg;
+  border-color: $white-md;
+  border-radius: 8px !important;
+
+  .card-title {
+    font-size: $otoklix-font-size-xxs;
+    color: $black-lg;
+    line-height: px2rem(16);
+  }
+
+  .card-subtitle {
+    font-weight: $font-weight-600;
+    font-size: $otoklix-font-size-md;
+    color: $black-lg;
+    line-height: px2rem(21);
+  }
+}
+
+.card-info-otopoints {
+  background: $white-lg;
+  border-color: $white-md;
+  position: absolute;
+  width: 87%;
+  top: 238px;
+  border: none;
+  border-radius: px2rem(8px);
+  box-shadow: 0px 2px 4px -2px rgba(24, 39, 75, 0.12), 0px 4px 4px -2px rgba(24, 39, 75, 0.08);
+
+  .card-title {
+    font-size: $otoklix-font-size-xxs;
+    color: $black-lg;
+    line-height: px2rem(16);
+  }
+
+  .card-subtitle {
+    font-weight: $font-weight-600;
+    font-size: $otoklix-font-size-md;
+    color: $black-lg;
+    line-height: px2rem(21);
+  }
+}
+
+.card-common-info {
+  background: $white-lg;
+  border-color: $white-md;
+  color: $black-lg;
+
+
+  .card-title {
+    font-weight: $font-weight-700;
+    font-size: $otoklix-font-size-xs;
+    line-height: px2rem(16);
+  }
+
+  .card-subtitle {
+    font-weight: 400;
+    font-size: $otoklix-font-size-xs;
+    line-height: px2rem(21);
+  }
+}
+
+.card-referral {
+  background: $white-lg;
+  width: px2rem(185);
+  border-radius: px2rem(16);
+  font-size: px2rem(12);
+
+  .card-referral-link {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    color: $secondary;
+    fill: $secondary;
+
+    :hover {
+      text-decoration: underline;
+    }
+
+    span {
+      font-weight: 700;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-right: px2rem(4);
+    }
+  }
+
+  .card-referral-link.active {
+    color: $success;
+    fill: $success;
+  }
+}
+
+.card-workshops {
+  .pricing-info {
+    font-size: px2rem(11);
+    color: $label;
+  }
+
+  .pricing {
+    font-size: $otoklix-font-size-md;
+    color: $secondary;
+    line-height: 16px;
+  }
+
+  .badge-container {
+    font-size: $otoklix-font-size-xxs;
+
+    .badge {
+      padding: px2rem(4) px2rem(8);
+      line-height: 1.5;
+      font-weight: 500;
+    }
+
+    .badge-separator {
+      background: $white-lg;
+      width: 2px;
+      color: transparent;
+      background: $white-lg;
+      border: 1px solid $white-lg;
+    }
+  }
+
+}
+
+.card-search-service {
+  display: flex;
+  flex-direction: row;
+  border: 0;
+
+  .card-image {
+    border-radius: px2rem(16);
+    width: 88px;
+    height: 88px;
+    object-fit: cover;
+  }
+
+  .box-icon {
+    .icon {
+      min-height: unset;
+    }
+  }
+
+  .badge-top-left {
+    position: absolute;
+    left: px2rem(4);
+    top: px2rem(4);
+    z-index: 1;
+
+    .icon-text {
+      color: $secondary;
+    }
+  }
+
+  .card-title {
+    color: $title-active !important;
+    font-size: $otoklix-font-size-md;
+    font-weight: 700;
+    max-height: px2rem(21);
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    word-break: break-all;
+  }
+
+  .card-subtitle {
+    position: inherit !important;
+    color: $title-active !important;
+    font-size: $otoklix-font-size-xxs !important;
+    font-weight: 400;
+    margin: px2rem(2) 0;
+    max-height: px2rem(15);
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    word-break: break-all;
+  }
+
+  .card-stats {
+    font-size: $otoklix-font-size-xxs !important;
+    color: $label !important;
+    font-weight: 400;
+
+    .highlight {
+      text-decoration: underline;
+      color: $primary;
+    }
+
+    .detail {
+      font-size: px2rem(8);
+      line-height: px2rem(15);
+    }
+
+  }
+
+  .ribbon-container {
+    width: 23px;
+  }
+
+  .tags {
+    font-size: 8px;
+  }
+
+  .original-price {
+    font-size: px2rem(8);
+    text-decoration: line-through;
+    color: $label;
+    font-weight: 400;
+  }
+
+  .price {
+    color: $secondary;
+    font-weight: 700;
+  }
+
+  .btn-title {
+    font-size: px2rem(8);
+    line-height: px2rem(12);
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  .btn-subtitle {
+    font-size: px2rem(8);
+    line-height: px2rem(12);
+    color: $dark;
+  }
+}
+
+.card-search-workshop {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  border: 0;
+  align-items: center;
+
+  .card-image {
+    border-radius: px2rem(16);
+    width: 88px;
+    height: 88px;
+    object-fit: cover;
+  }
+
+  .box-icon {
+    .icon {
+      min-height: unset;
+    }
+  }
+
+  .card-title {
+    color: $title-active !important;
+    font-size: $otoklix-font-size-md;
+    font-weight: 700;
+    max-height: px2rem(42);
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    word-break: break-all;
+  }
+
+  .card-subtitle {
+    position: inherit !important;
+    color: $title-active !important;
+    font-size: $otoklix-font-size-xxs !important;
+    font-weight: 400;
+  }
+
+  .card-stats {
+    font-size: $otoklix-font-size-xxs !important;
+    color: $label !important;
+    font-weight: 400;
+
+    .highlight {
+      text-decoration: underline;
+      color: $primary;
+    }
+
+    .detail {
+      font-size: px2rem(8);
+      line-height: px2rem(15);
+    }
+  }
+}
+
+.search-explore {
+  .card-title {
+    color: $black-md !important;
+    font-weight: 400 !important;
+    font-size: $otoklix-font-size !important;
+  }
+
+  .separator, .distance {
+    font-size: px2rem(10);
+    color: $black-md !important;
+  }
+}
+
+.card-trending {
+  .card-image {
+    object-fit: cover;
+  }
+}
+
+.category-icon-order {
+  width: 26px;
+  height: 26px;
+}
+
+.grey-ws-price {
+  .pricing-section {
+    .price {
+      color: $black-sm;
+      font-size: $otoklix-font-size-sm;
+    }
+  }
+}
+
+.star-search-explore {
+  font-size: $otoklix-font-size-xxs !important;
+  font-weight: 400;
+  color: $orange !important;
+}
+
+.card-confirmation-order {
+  border: 2px solid $primary;
+  box-sizing: border-box;
+  border-radius: 8px;
+
+  .info {
+    display: flex;
+    flex-direction: column;
+
+    .package-name {
+      font-weight: 600 !important;
+      font-size: 16px !important;
+      line-height: 24px !important;
+      letter-spacing: 0.75px !important;
+      color: $primary !important;
+
+      &:not(:first-child) {
+        margin-top: 5px;
+      }
+    }
+
+    span {
+      &:nth-of-type(1) {
+        color: $secondary;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.75px;
+      }
+
+      &:nth-of-type(2) {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 15px;
+        letter-spacing: 0.75px;
+        color: #A0A3BD;
+      }
+    }
+
+    &--workshop {
+      span {
+        font-weight: 400 !important;
+        font-size: 10px !important;
+        line-height: 15px;
+        letter-spacing: 0.75px;
+        color: #6E7191 !important;
+      }
+
+      img {
+        width: 14px;
+      }
+    }
+  }
+
+  .package-detail-collapse {
+    &__item {
+      span {
+        &:nth-of-type(1) {
+          font-weight: 400;
+          font-size: $otoklix-font-size-xxs;
+          line-height: 15px;
+          letter-spacing: 0.75px;
+          color: #6E7191;
+        }
+
+        &:nth-of-type(2) {
+          font-weight: 700;
+          font-size: $otoklix-font-size-xs;
+          line-height: 18px;
+          letter-spacing: 0.75px;
+          color: #6E7191;
+        }
+      }
+    }
+  }
+}
+
+.card-feature {
+  box-shadow: 0px 2px 4px -2px rgba(24, 39, 75, 0.12), 0px 4px 4px -2px rgba(24, 39, 75, 0.08);
+  background-color: #fff;
+  .card-content {
+    h5 {
+      font-size: $otoklix-font-size-xs;
+      font-weight: bold;
+      line-height: 18px;
+    }
+    p {
+      font-size: $otoklix-font-size-xxs;
+      line-height: 16px;
+    }
+  }
+  .card-footer {
+    background-color: #fff;
+    .tab-section {
+      .tab {
+        font-size: 12px;
+        font-weight: bold;
+        position: relative;
+        &.active {
+          &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 4px;
+            left: 0;
+            right: 0;
+            width: 20px;
+            display: block;
+            height: 6px; /* Height of border */
+            background-color: $primary-app;
+            border-radius: 5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.card-ws-search{
+  box-shadow: 0px 2px 4px -2px rgba(24, 39, 75, 0.12), 0px 4px 4px -2px rgba(24, 39, 75, 0.08);
+  background-color: #fff;
+  border-radius: 12px !important;
+  .card-ws-explore-button {
+    padding: 2px 8px !important;
+  }
+}
+
+.card-recommend-workshop {
+  .card-img-top {
+    border-top-left-radius: calc(1rem - 1px) !important;
+    border-top-right-radius: calc(1rem - 1px) !important;
+    display: block;
+  }
+
+  .card-body {
+    min-height: 127px;
+  }
+
+  .tag-ws {
+    margin-bottom: -10px;
+  }
+}
+
+.card-recommend-service {
+  border-radius: 1rem !important;
+
+  .img-card-service img {
+    border-radius: calc(1rem - 1px) calc(1rem - 1px) 0 0 !important;
+  }
+  .title-service {
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    overflow: hidden;
+  }
+  .service-subtitle {
+    margin-top: 4px !important;
+  }
+  .recommended-label {
+    bottom: 53% !important;
+  }
+  .text-sm {
+    font-weight: 600 !important;
+  }
+  .usp-top, 
+  .usp-bottom {
+    span {
+      font-size: .4rem !important;
+    }
+
+    img {
+      display: inline !important;
+    }
+  }
+  .usp-bottom {
+    border-radius: 0 0 calc(1rem - 1px) calc(1rem - 1px) !important;
+  }
+}
+
+.package-list-wrapper {
+  .main-image {
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+}
+
+.card-recommend-service-non {
+  max-height: 285px !important;
+  min-height: 285px !important;
+  .title-service {
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    overflow: hidden;
+  }
+  .recommended-label {
+    bottom: 47% !important;
+  }
+  .text-sm {
+    font-weight: 600 !important;
+  }
+  .card-body {
+    justify-content: start !important;
+  }
+  .usp-top span,
+  .usp-bottom span {
+    font-size: .4rem !important;
+  }
+}
+
+.rounded-1-half {
+  border-radius: 12px;
+}
+
+.card-address-bar {
+  .title {
+    font-weight: 600 !important;
+    font-size: 0.875rem;
+    line-height: 21px;
+    letter-spacing: 0.75px;
+  }
+}
+
+.xs-card-shadow {
+  box-shadow: 0px 2px 4px -2px rgba(24, 39, 75, 0.12), 0px 4px 4px -2px rgba(24, 39, 75, 0.08);
+  background-color: #fff;
+}
+
+.rounded-icon-button {
+  border-radius: 50% !important;
+  width: 1.5rem;
+  height: 1.5rem;
+  &.blue-border {
+    border: $primary solid 2px;
+    background-color: #fff;
+  }
+}
+
+.fit-content-tag {
+  height: fit-content;
+}
+
+.address-sheet {
+  .update {
+    color: $dark
+  }
+  .delete {
+    color: $danger;
+  }
+}

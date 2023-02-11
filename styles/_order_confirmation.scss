@@ -1,0 +1,94 @@
+.stepper-wrapper {
+  background-color: $white-lg;
+  padding: 21px 55px 19px;
+
+  hr {
+    margin: .75rem !important;
+    width: 12% !important;
+  }
+}
+
+.order-wrapper {
+  padding: 12px;
+
+  .title {
+    font-weight: 600 !important;
+    font-size: $otoklix-font-size-md;
+    line-height: 21px;
+    letter-spacing: 0.75px;
+    color: #6E7191;
+  }
+}
+
+.time-wrapper {
+  padding: 12px 12px 30px 12px;
+
+  .title {
+    font-weight: 600 !important;
+    font-size: $otoklix-font-size-md;
+    line-height: 21px;
+    letter-spacing: 0.75px;
+    color: #6E7191;
+  }
+}
+
+.time-wrapper-up {
+  padding: 12px 12px 20px 12px;
+
+  .title {
+    font-weight: 600 !important;
+    font-size: $otoklix-font-size-md;
+    line-height: 21px;
+    letter-spacing: 0.75px;
+    color: #6E7191;
+  }
+}
+
+.getotopoint-wrapper {
+  background-color: $primary;
+  font-weight: 400;
+  font-size: $otoklix-font-size-xxs;
+  line-height: 15px;
+  letter-spacing: 1px;
+  color: #FCFCFC;
+  padding: 8.5px 36px;
+  border-radius: 4px 4px 0px 0px;
+}
+
+hr.page-devider {
+  height: 16px;
+  margin: 0;
+}
+
+hr.page-devider-small {
+  height: 8px;
+  margin: 0;
+}
+
+.text-total-tagihan {
+  font-weight: 400;
+  font-size: $otoklix-font-size-xxs;
+  line-height: 18px;
+  letter-spacing: 1px;
+  color: #A0A3BD;
+}
+
+.input-order-confirmation {
+  &.form-control:disabled, .form-control[readonly] {
+    background-color: $neutral-10 !important;
+    border-color: $neutral-30 !important;
+  }
+}
+
+.order-select {
+  .form-check-input:checked {
+    background-color: $primary-app !important;
+    border-color: $primary-app !important;
+  }
+
+  .form-check-input:focus {
+    border-color: $primary-app;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(48, 75, 228, 0.25);
+  }
+}

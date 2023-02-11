@@ -1,0 +1,70 @@
+.gogoklix {
+    &__header {
+        background: url(/assets/images/otospare.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &-username {
+            font-size: 32px;
+        }
+    }
+
+    &__benefit {
+        &-title {
+            font-size: 24px;
+        }
+    }
+}
+
+.gogoklix-mission {
+  .title {
+    font-size: $otoklix-font-size;
+    font-weight: 700 !important;
+    letter-spacing: 2px;
+  }
+
+  .info {
+    font-size: $otoklix-font-size-xxs;
+    font-weight: 400 !important;
+  }
+
+  .service-count {
+    font-size: $otoklix-font-size-xs;
+    font-weight: 700 !important;
+  }
+
+  .progress {
+    background-color: #EFF0F7;
+    border-radius: 30px;
+    height: 8px;
+    .progress-bar {
+      background-color: $blue;
+    }
+  }
+
+  .progress-label {
+    font-size: $otoklix-font-size-xxs;
+    font-weight: 400 !important;
+  }
+}
+
+.gogoklix-service {
+  .title {
+    font-size: $otoklix-font-size;
+
+    &.tagline {
+      font-size: $otoklix-font-size-lg;
+      font-weight: 700 !important;
+    }
+  }
+
+  .info {
+    font-size: $otoklix-font-size-xxs;
+    line-height: 18px;
+
+    &.tagline {
+      font-size: 12px;
+    }
+  }
+}

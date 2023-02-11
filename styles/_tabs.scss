@@ -1,0 +1,39 @@
+.wrapper-tabs-sliding {
+  ul {
+    padding: 0;
+    margin-bottom: 0;
+    text-align: center;
+    width: 100%;
+    li {
+      display: inline-block;
+      width: 50%;
+      cursor: pointer;
+      color: $neutral-80;
+      span, p, div {
+        font-weight: bold !important;
+        font-size: 14px;
+      }
+      &:first-child.active ~ .underline {
+        margin-left: 0%;
+      }
+      &:nth-child(2).active ~ .underline {
+        margin-left: 50%;
+      }
+    }
+  }
+
+  .underline {
+    height: .30rem;
+    width: 50%;
+    margin: 0;
+    background: $primary-app;
+    border: none;
+    transition: .2s ease-in-out;
+    margin-top: 10px;
+  }
+}
+
+.sparator-component {
+  background-color: $neutral-10;
+  height: 10px;
+}

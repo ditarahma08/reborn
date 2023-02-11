@@ -1,0 +1,23 @@
+.add-address {
+  &__map {
+    height: calc(100vh - 216px);
+
+    &-button {
+      &:focus {
+        box-shadow: none;
+      }
+      &:hover {
+        background-color: $white-xl;
+      }
+    }
+  }
+
+  &__address-footer {
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__address-label {
+    max-width: 230px;
+  }
+}

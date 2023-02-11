@@ -1,0 +1,41 @@
+.search-page {
+    &__last-search {
+        button {
+            padding: 0.375rem 0.75rem;
+            max-width: 170px;
+        }
+    }
+
+    &__items-recommendation {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .card {
+            flex: 0 0 auto;
+        }
+        
+        .card-recommend-workshop {
+            margin-left: 8px !important;
+
+            .flagship-ribbon img {
+                display: inline !important;
+            }
+        }
+
+        .card-recommend-service {
+            min-height: 380px;
+        }
+    }
+}
+
+.input-global-search {
+    input {
+        border-radius: 8px;
+    }
+}

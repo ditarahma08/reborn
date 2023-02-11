@@ -1,0 +1,16 @@
+User-agent: Googlebot
+Disallow:
+
+User-agent: Googlebot-image
+Disallow:
+
+User-agent: *
+Allow: /bengkel/[slug]
+Allow: /servis/[slug]
+Allow: /blog
+Allow: /promo
+Allow: /promo/[slug]
+Allow: /about-us
+Disallow: /order
+Disallow: /garasi
+Disallow: /account

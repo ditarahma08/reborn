@@ -1,0 +1,166 @@
+
+.otobuddy {
+  position: fixed;
+  bottom: 75px;
+  transform: translateX(275px);
+  box-shadow: 0px 8px 12px rgb(0 0 0 / 12%);
+  background: white;
+  border-radius: 100%;
+  padding: .7rem .5rem;
+  cursor: pointer;
+  z-index: $zindex-bubble;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 400ms;
+
+  img {
+    height: 35px;
+    width: 42px;
+  }
+}
+
+.scroll-top-btn {
+  padding: .5rem;
+  bottom: 20px;
+
+  img {
+    width: 22px;
+    height: 22px;
+    margin: 10px;
+  }
+}
+
+.scroll-top-btn-mycar {
+  padding: .5rem;
+  bottom: 115px;
+
+  img {
+    width: 22px;
+    height: 22px;
+    margin: 10px;
+  }
+}
+
+.workshop-buddy {
+  padding: .5rem;
+  bottom: 20px;
+
+  img {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.hide-buddy {
+  opacity: 0;
+  transition: visibility 0s linear 400ms, opacity 400ms;
+}
+
+.info-buddy {
+  background: $dark;
+  padding: 8px;
+  color: $white;
+  border-radius: 10px;
+  border-bottom-right-radius: 0;
+  font-size: $otoklix-font-size-xs;
+  max-width: 220px;
+  display: flex;
+  margin-bottom: 50px;
+  margin-right: 10px;
+  position: relative;
+  z-index: 1;
+
+  .close-btn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    cursor: pointer;
+  }
+}
+
+.timer {
+  animation: timer 5s steps(10, start) infinite;
+  background: linear-gradient(90deg, $secondary 50%, $dark 50%);
+  border-radius: 50%;
+  height: 16px;
+  position: relative;
+  width: 16px;
+  border: 1px solid $white;
+}
+
+.timer:after {
+  animation: mask 5s steps(5, start) infinite;
+  border-radius: 100% 0 0 100% / 50% 0 0 50%;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform-origin: 100% 50%;
+  width: 50%;
+}
+
+.custom_fc_frame {
+  bottom: 70px !important;
+}
+
+.default-custom_chat_button {
+  position: fixed;
+  bottom: 75px;
+  height: 60px;
+  background: url("/assets/icons/OtoBuddy-Live.svg") no-repeat,  rgba(17, 40, 198, 1);
+  width: 60px;
+  box-shadow: 0px 1px 12px rgb(0 0 0 / 16%);
+  background-size: 100%;
+  z-index: $zindex-bubble;
+  transition: visibility 0s linear 0s, opacity 400ms;
+  border-radius: 100%;
+  border: 0px solid #1128c6;
+  cursor: pointer;
+  right: 15px;
+}
+
+@keyframes timer {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes mask {
+  0% {
+    background: $dark;
+    transform: rotate(0deg);
+  }
+  50% {
+    background: $dark;
+    transform: rotate(-180deg);
+  }
+  50.01% {
+    background: $secondary;
+    transform: rotate(0deg);
+  }
+  100% {
+    background: $secondary;
+    transform: rotate(-180deg);
+  }
+}
+
+@include respond-below("sm") {
+  .otobuddy {
+    left: 95%;
+    transform: translateX(-90%);
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .hide-buddy {
+    transform: translateX(100px);
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .default-custom_chat_button {
+    right: calc(50% - 202px + 30px) !important;
+  }
+  .custom_fc_frame {
+    right: calc(50% - 243px + 30px) !important;
+  }
+}

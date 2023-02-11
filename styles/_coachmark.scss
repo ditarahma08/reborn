@@ -1,0 +1,74 @@
+.coachmark {
+  &-card {
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.16);
+    border-radius: 24px 0px 24px 24px;
+    color: $neutral-70;
+    width: 328px;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.75px;
+    padding: 16px;
+    margin-top: -30px;
+  }
+
+  &-header,
+  &-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  &-title {
+    font-size: 14px;
+    // font-weight: bold;
+    color: $black;
+  }
+
+  &-content {
+    margin: 10px 0 15px;
+  }
+
+  &-indicator {
+    display: flex;
+    font-size: 14px;
+
+    .text-secondary {
+      font-weight: bold;
+    }
+
+    .text-grey {
+      color: $black-sm;
+    }
+  }
+
+  &-action {
+    font-size: 16px;
+    font-weight: normal;
+
+    span:nth-child(2) {
+      color: #fff;
+    }
+  }
+}
+
+.__floater__open {
+  transition: opacity 0.3s !important;
+}
+
+.right-bottom-target {
+  border-radius: 24px 24px 0px 24px;
+  margin-top: 22px;
+}
+
+.fill-step {
+  color: #fff !important;
+  background-color: $primary-app !important;
+  padding: 7px 10px;
+  font-size: 12px;
+  border-radius: 50px;
+}

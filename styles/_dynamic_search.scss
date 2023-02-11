@@ -1,0 +1,91 @@
+.banner-dynamic {
+  text-align: center;
+  img {
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: 50% 50%
+  }
+}
+
+.label-select-car {
+  font-size: 10px;
+  margin-right: 8px;
+}
+
+.selected-car {
+  cursor: pointer;
+  font-size: 10px;
+  color: $primary;
+  img {
+    width: 15px;
+    margin-left: 5px;
+  }
+}
+
+.dynamic-search {
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .content-title {
+    h1, h2, h3 {
+      font-size: 14 !important;
+      color: #000 !important;
+      font-weight: 700 !important;
+    }
+  }
+  .container-content {
+    h1, h2, h3 {
+      font-size: 14 !important;
+      color: #000 !important;
+      font-weight: 700 !important;
+    }
+    span {
+      color: $neutral-80;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    p {
+      color: $neutral-80;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    li::marker {
+      font-size: 12px;
+    }
+    .content {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: -webkit-box !important;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      white-space: normal;
+      margin: 20px 0;
+    }
+  }
+  .divider-collapse {
+    .show-more {
+      background: $offwhite;
+      border: 2px solid $white-lg;
+      border-radius: 100px;
+      padding: .5rem;
+      text-align: center;
+      color: $label;
+      font-weight: 400;
+      font-size: $otoklix-font-size-xs;
+      cursor: pointer;
+      margin: 0 auto;
+      z-index: 1;
+      width: 220px;
+    }
+  }
+
+  h1 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}

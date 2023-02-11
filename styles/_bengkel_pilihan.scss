@@ -1,0 +1,42 @@
+.filter {
+  .tags {
+    cursor: pointer;
+    margin-right: .5rem;
+    background: #f7f7fc !important;
+
+    &:hover {
+      background: $black-xs !important;
+    }
+  }
+
+  .tags.active {
+    font-weight: 600;
+    background: $primary-app !important;
+    color: $white-lg !important;
+  }
+}
+
+.bengkel-pilihan__content__card-sec {
+  h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 0.8125rem;
+    margin-bottom: 0 !important;
+  }
+  
+  li {
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    line-height: 18px;
+    color: $neutral-80;
+  }
+
+  img {
+    width: 100% !important;
+    height: auto !important;
+  }
+}

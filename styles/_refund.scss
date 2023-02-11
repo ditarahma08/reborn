@@ -1,0 +1,85 @@
+.refund-wrapper {
+	background-color: $white-lg;
+
+	.refund-header {
+		background-color: #FFF;
+	}
+
+	.order-id-wrapper {
+		background-color: #EFF0F6;
+
+		.label {
+			font-size: $otoklix-font-size-xs;
+			font-weight: 400;
+			color: $black-md;
+		}
+
+		.order-id {
+			font-size: $otoklix-font-size-xs;
+			font-weight: 500;
+			color: $black-xl;	
+		}
+	}
+
+	.package-wrapper {
+		background-color: #FFF;
+		padding: 20px 12px;
+
+	  .title {
+	    font-weight: 700 !important;
+	    font-size: $otoklix-font-size-md;
+	    line-height: 21px;
+	    letter-spacing: 0.75px;
+	    color: $black-lg;
+	  }
+
+	  .label-name {
+	  	font-size: $otoklix-font-size-xs;
+	  	font-weight: 400;
+	  	color: $black-lg;
+	  	&.xs {
+	  		font-size: $otoklix-font-size-xxs;
+	  	}
+	  }
+
+	  .detail {
+	  	font-size: $otoklix-font-size-md;
+	  	font-weight: 600;
+	  	color: $black-lg;
+	  }
+
+	  &.reason-margin {
+			margin-bottom: 90px !important
+		}
+	}
+}
+
+.refund-bank {
+    &__button-add-bank {
+        background-color: $blue-light;
+        border: 1px dashed $primary;
+    }
+
+    &__radio-options {
+        &.form-check-input{
+            &:checked {
+                background-color: $primary;
+                border-color: $primary;
+            }
+
+            &:focus {
+                border-color: $blue-light;
+                box-shadow: 0 0 0 0.25rem $blue-light;
+            }
+        }
+
+    }
+}
+
+.reason {
+	font-size: $otoklix-font-size-xs !important;
+	font-weight: 400 !important;
+	&.filled {
+		font-weight: 700 !important;
+	}
+}

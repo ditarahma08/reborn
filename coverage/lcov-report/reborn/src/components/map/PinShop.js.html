@@ -1,0 +1,194 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for reborn/src/components/map/PinShop.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../../../index.html">All files</a> / <a href="index.html">reborn/src/components/map</a> PinShop.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/2</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/1</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/2</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const PinShop = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >({</span> text, onClick }) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  return (</span>
+    &lt;div
+      data-tip={text}
+      onClick={onClick}
+      style={{ width: '100px', cursor: 'pointer', paddingLeft: '40px', marginLeft: '-40px' }}&gt;
+      &lt;div style={{ width: '100px', paddingLeft: '40px', marginLeft: '-40px' }}&gt;
+        &lt;svg
+          width="28"
+          height="28"
+          viewBox="0 0 28 28"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"&gt;
+          &lt;path
+            d="M4.47607 13.2306C4.47607 11.1904 5.43883 9.28641 7.03929 8.16139L10.8488 5.48355C12.7597 4.14035 15.2401 4.14035 17.151 5.48355L20.9605 8.16139C22.5609 9.28641 23.5237 11.1904 23.5237 13.2306V17.4472C23.5237 20.8032 20.9653 23.5238 17.8094 23.5238H10.1904C7.03445 23.5238 4.47607 20.8032 4.47607 17.4472V13.2306Z"
+            fill="#002EB4"
+          /&gt;
+          &lt;path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M27.3332 13.2443V17.3859C27.3332 22.8797 23.0692 27.3333 17.8094 27.3333H10.1903C4.93046 27.3333 0.666504 22.8797 0.666504 17.3859V13.2443C0.666504 9.90453 2.27109 6.78766 4.93852 4.94599L8.74805 2.31579C11.9328 0.116956 16.0669 0.116955 19.2516 2.31579L23.0612 4.94599C25.7286 6.78766 27.3332 9.90453 27.3332 13.2443ZM7.03924 8.26531C5.43878 9.37031 4.47603 11.2404 4.47603 13.2443V17.3859C4.47603 20.6822 7.0344 23.3544 10.1903 23.3544H17.8094C20.9653 23.3544 23.5236 20.6822 23.5236 17.3859V13.2443C23.5236 11.2404 22.5609 9.37031 20.9604 8.26531L17.1509 5.63511C15.2401 4.31581 12.7596 4.31581 10.8488 5.63511L7.03924 8.26531Z"
+            fill="white"
+          /&gt;
+          &lt;path
+            d="M15.3217 11.6428C15.2115 11.7552 15.1498 11.9064 15.1498 12.0638C15.1498 12.2212 15.2115 12.3723 15.3217 12.4847L16.2839 13.4469C16.3963 13.5571 16.5474 13.6188 16.7048 13.6188C16.8622 13.6188 17.0133 13.5571 17.1257 13.4469L19.3928 11.1798C19.6952 11.848 19.7868 12.5925 19.6553 13.3141C19.5238 14.0356 19.1756 14.7 18.6569 15.2186C18.1383 15.7372 17.474 16.0855 16.7524 16.217C16.0308 16.3484 15.2863 16.2569 14.6181 15.9545L10.4628 20.1098C10.2236 20.349 9.89913 20.4834 9.56081 20.4834C9.22248 20.4834 8.89802 20.349 8.65879 20.1098C8.41955 19.8706 8.28516 19.5461 8.28516 19.2078C8.28516 18.8695 8.41955 18.545 8.65879 18.3058L12.8141 14.1505C12.5117 13.4822 12.4202 12.7377 12.5516 12.0162C12.6831 11.2946 13.0313 10.6303 13.55 10.1116C14.0686 9.59302 14.733 9.24477 15.4545 9.1133C16.1761 8.98183 16.9206 9.07338 17.5888 9.37576L15.3277 11.6368L15.3217 11.6428Z"
+            fill="#FCFCFC"
+          /&gt;
+        &lt;/svg&gt;
+      &lt;/div&gt;
+&nbsp;
+      &lt;div style={{ width: '100px', textAlign: 'center', position: 'absolute', left: '-35px' }}&gt;
+        {text}
+      &lt;/div&gt;
+    &lt;/div&gt;
+  );
+};
+&nbsp;
+export default PinShop;
+&nbsp;</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
+                at Mon Jan 17 2022 13:47:01 GMT+0700 (Indochina Time)
+            </div>
+        </div>
+        <script src="../../../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../../../sorter.js"></script>
+        <script src="../../../../block-navigation.js"></script>
+    </body>
+</html>
+    

@@ -1,0 +1,102 @@
+.promo-detail-section {
+  .tnc-section {
+    padding: 8px 0;
+    cursor: pointer;
+    font-weight: 400;
+    color: $primary;
+    text-decoration: underline;
+    font-size: $otoklix-font-size-xs;
+  }
+
+  .icon-small {
+    width: 14px;
+    height: 14px;
+  }
+
+  .box-label {
+    margin-bottom: 16px;
+  }
+
+  .label-select-car {
+    font-size: 10px;
+    margin-right: 8px;
+  }
+
+  .selected-car {
+    cursor: pointer;
+    font-size: 10px;
+    color: $primary;
+  }
+
+  .chevron-down-icon {
+    width: 13px;
+    margin-left: 3px;
+  }
+}
+
+.promo-package-heading {
+  color: $title-active;
+  font-weight: 600;
+  font-size: $otoklix-font-size;
+}
+
+.promo-quick-filter {
+  .tags {
+    border-radius: px2rem(12);
+    cursor: pointer;
+    margin-right: 0.5rem;
+
+    &:hover {
+      background: $black-xs !important;
+    }
+  }
+
+  .tags.active {
+    background: $title-active !important;
+    color: $white-lg !important;
+  }
+}
+
+.btn-promo-search-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $dark;
+  font-size: $otoklix-font-size-xs;
+  font-weight: 700;
+  border: 1px solid $white-md;
+  border-radius: 8px;
+  padding: px2rem(12);
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.promo-group {
+  box-shadow: $card-box-shadow;
+}
+
+.warning-promo-message {
+  font-weight: 700;
+  font-size: $otoklix-font-size;
+  color: $secondary;
+  strong {
+    font-weight: 400;
+    color: $black-sm;
+    font-size: $otoklix-font-size-md;
+  }
+
+}
+
+.required:after {
+  content: "*";
+  color: #DC3545
+}
+
+.order-button {
+  width: 90% !important;
+  margin: auto;
+  z-index: inherit;
+}

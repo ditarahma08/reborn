@@ -1,0 +1,56 @@
+.img-gallery-wrapper {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.3s;  
+}
+
+.img-gallery {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  border: none;
+}
+
+.tabs-gallery-wrapper {
+  top: 54px;
+  background-color: white;
+  .tabs-gallery {
+    margin-bottom: 1rem;
+    .tab {
+      cursor: pointer;
+      .label {
+        font-size: 12px;
+      }
+      &.active {
+        border-bottom: solid 2px $blue;
+        .label {
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
+}
+
+.clear-header {
+  background-color: white;
+
+}
+
+.fslightbox-toolbar-button:nth-child(1),
+.fslightbox-toolbar-button:nth-child(4) {
+  display: none;
+}

@@ -1,0 +1,22 @@
+.box-icon-home {
+    min-width: 3.5rem;
+    margin-right: 1rem;
+    text-decoration: none;
+  
+    .icon {
+      width: unset;
+    }
+  
+    .icon-text {
+      font-size: $otoklix-font-size-xxs !important;
+    }
+  }
+
+  .service-home {
+    margin-bottom: -40px;
+  }
+  
+  .service-home::-webkit-scrollbar {
+    width: 0 !important
+  }
+

@@ -1,0 +1,318 @@
+// workshop detail
+.workshop-detail-wrapper {
+  .back-button {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    cursor: pointer;
+  }
+
+  // workshop info
+  .workshop-info {
+    .badge-box {
+      margin-left: -3px;
+      height: 30px;
+    }
+
+    .title {
+      font-weight: 600;
+      font-size: px2rem(20);
+      color: $title-active;
+      margin-bottom: 0;
+    }
+
+    .subtitle {
+      font-size: $otoklix-font-size-xs;
+      color: $title-active;
+      letter-spacing: 0.2px;
+      font-weight: 500;
+      position: relative;
+
+      &.address {
+        font-weight: 500;
+        color: $primary;
+      }
+    }
+
+    .opening-hour {
+
+      &.open {
+        .status {
+          fill: #00BA88;
+          color: #00BA88;
+        }
+      }
+
+      .status {
+        color: #ED2E2E;
+        fill: #ED2E2E;
+        font-size: $otoklix-font-size-md;
+        font-weight: 600;
+        padding-top: 1px;
+      }
+
+      .title {
+        font-size: $otoklix-font-size-xs;
+        color: #A0A3BD;
+        font-weight: 400;
+        padding-top: 1px;
+      }
+
+      .subtitle {
+        font-size: $otoklix-font-size-xs;
+        font-weight: 500;
+        color: $primary;
+      }
+    }
+  }
+
+  .quick-filter {
+    .tags {
+      cursor: pointer;
+      margin-right: .5rem;
+
+      &:hover {
+        background: $black-xs !important;
+      }
+    }
+
+    .tags.active {
+      font-weight: 600;
+      background: $title-active !important;
+      color: $white-lg !important;
+    }
+  }
+}
+
+.workshop-sheet {
+  .card-package-title {
+    display: flex;
+
+    img {
+      width: 96px;
+      height: 96px;
+      border-radius: 0.5rem;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .title {
+      font-size: $otoklix-font-size-xs;
+      color: $title-active;
+      font-weight: 600;
+    }
+
+    .desc {
+      font-size: $otoklix-font-size-xs;
+      color: $label;
+      max-height: 74px;
+      overflow: hidden;
+    }
+  }
+
+  .total-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid $line;
+    cursor: default;
+  }
+
+  .total-title {
+    font-size: $otoklix-font-size-xxs;
+    color: $placeholder;
+    font-weight: 400;
+  }
+
+  .total-amount {
+    font-weight: 700;
+    font-size: $otoklix-font-size-md;
+    text-align: right;
+    color: $secondary;
+  }
+
+  .total-points {
+    font-size: $otoklix-font-size-xs;
+    text-align: right;
+    color: $label;
+    font-weight: 400;
+  }
+
+  .detail-package {
+    .title {
+      font-weight: 600;
+      font-size: $otoklix-font-size-md;
+      color: $dark;
+    }
+
+    .subtitle {
+      font-weight: 500;
+      color: $dark;
+      font-size: $otoklix-font-size-xs;
+    }
+
+    .price {
+      color: $primary;
+      font-weight: 600;
+      font-size: $otoklix-font-size-sm;
+    }
+
+    .original-price {
+      font-weight: 600;
+      color: $placeholder;
+      font-size: $otoklix-font-size-xxs;
+      text-decoration: line-through;
+      padding-right: .5rem;
+    }
+
+    .choose-item {
+      color: $primary;
+      font-weight: 500;
+      font-size: $otoklix-font-size-xs;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  .guarantee {
+    cursor: default;
+
+    .title {
+      font-weight: 700;
+      font-size: $otoklix-font-size-xs;
+      color: $success;
+    }
+
+    .subtitle {
+      font-size: $otoklix-font-size-xxs;
+      color: $label;
+    }
+
+    .collapse-box {
+      border-left: 2px solid $success;
+    }
+
+    .guarantee-content {
+      .title,
+      .subtitle {
+        padding-left: 1rem;
+        color: $label;
+        font-size: $otoklix-font-size-xxs;
+        font-weight: 600;
+      }
+
+      .subtitle {
+        padding-left: 1rem;
+        color: $label;
+        font-size: $otoklix-font-size-xxs;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.operation-hour-sheet {
+  h2 {
+    font-weight: 600;
+    font-size: $otoklix-font-size;
+    color: $title-active;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: $otoklix-font-size-xxs;
+    color: $black-sm;
+  }
+}
+
+.confirmation-order-summary {
+  font-size: $otoklix-font-size-xs;
+  color: $dark;
+  font-weight: 500;
+  padding: 0px;
+
+  hr {
+    opacity: 1;
+  }
+
+  .original-price {
+    font-size: $otoklix-font-size-xxs;
+    text-decoration: line-through;
+  }
+
+  .promo-code {
+    font-size: px2rem(10);
+    color: $label;
+
+  }
+}
+
+.confirmation-package-item {
+  font-weight: $font-weight-600;
+  line-height: 1.5;
+  letter-spacing: px2rem(.75);
+  display: flex;
+
+  .image {
+    width: px2rem(24);
+    height: px2rem(24);
+    border-radius: px2rem(10);
+  }
+
+  .title {
+    font-size: $otoklix-font-size-md;
+    color: $dark;
+  }
+
+  .subtitle {
+    font-weight: 400;
+    font-size: $otoklix-font-size-xxs;
+    color: $placeholder;
+  }
+
+  .desc {
+    font-weight: 400;
+    font-size: $otoklix-font-size-xs;
+    color: $label;
+  }
+
+  .original-price {
+    font-size: px2rem(11);
+    color: $placeholder;
+    text-decoration: line-through;
+  }
+
+  .price {
+    color: $secondary;
+    font-weight: 700;
+  }
+
+}
+
+.get-otopoints-wrapper {
+  font-weight: 400;
+
+  .overline {
+    font-size: $otoklix-font-size-xxs;
+    color: $placeholder;
+  }
+  .title {
+    font-size: $otoklix-font-size-xs;
+    color: $label;
+  }
+}
+
+.button-list-order-sheet {
+  [data-rsbs-overlay] {
+    z-index: 800;
+  }
+  [data-rsbs-header]{
+    box-shadow: unset !important;
+    &:before{
+      width: 26px;
+    }
+  }
+}

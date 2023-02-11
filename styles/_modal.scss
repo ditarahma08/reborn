@@ -1,0 +1,280 @@
+.real-modal {
+  .modal-content {
+    width: 328px;
+    min-width: 328px;
+    height: fit-content;
+  }
+}
+
+.otobody-modal {
+  h1 {
+    font-weight: 700;
+    font-size: $otoklix-font-size;
+    text-align: center;
+    line-height: 26px;
+    color: $title-active;
+    &.text-md {
+      font-size: $otoklix-font-size-md;
+    }
+  }
+
+  p {
+    font-size: $otoklix-font-size-xs;
+  }
+
+  .modal-body {
+    padding: 24px;
+    color: $black-xl;
+    font-weight: 400;
+  }
+}
+
+.tnc-modal {
+  font-size: $otoklix-font-size-xs;
+
+  h5.modal-title {
+    font-weight: 700;
+    font-size: $otoklix-font-size;
+    color: $title-active;
+  }
+
+  .modal-header {
+    .close {
+      color: $secondary;
+      border: 0;
+      background: transparent;
+      font-size: 25px;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      right: .7rem;
+    }
+  }
+
+  p {
+    font-weight: 400;
+    color: $label;
+    font-size: $otoklix-font-size-xs;
+  }
+}
+
+.modal-find-location {
+  .title {
+    font-weight: 600;
+    color: $title-active;
+    font-size: $otoklix-font-size;
+    margin-bottom: 0;
+    margin-right: 48px;
+  }
+
+  .info-text {
+    font-weight: 400;
+    font-size: $otoklix-font-size-md;
+  }
+  
+  .suggestion-box {
+    h3 {
+      font-weight: 600;
+      font-size: $otoklix-font-size-md;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: $otoklix-font-size-xs;
+      margin-bottom: 0;
+    }
+  }
+
+  .search-message {
+    h3 {
+      font-weight: 700;
+      font-size: $otoklix-font-size;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: $otoklix-font-size-md;
+    }
+  }
+}
+
+.custom-modal {
+  button {
+    font-size: 0.75em;
+  }
+}
+
+.payment-info {
+
+  &__due-hour {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .timer-countdown {
+      font-weight: 700 !important;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0.75px;
+      color: $primary;
+    }
+
+    div {
+      span {
+        &:nth-of-type(1) {
+          font-weight: 400 !important;
+          font-size: 8px !important;
+          line-height: 11px;
+          letter-spacing: 0.75px;
+          margin-bottom: 4px;
+        }
+
+        &:nth-of-type(2) {
+          font-weight: 700 !important;
+          font-size: 10px;
+          line-height: 14px;
+          letter-spacing: 0.75px;
+        }
+      }
+    }
+  }
+
+  &__bank-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 8px;
+    line-height: 14px;
+    letter-spacing: 0.75px;
+    margin-bottom: 16px;
+  }
+
+  &__va-number {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 8px;
+    margin-bottom: 16px;
+
+    .number {
+      font-weight: 500 !important;
+      font-size: 14px !important;
+      line-height: 20px;
+      letter-spacing: 0.75px;
+    }
+  }
+
+  &__total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 8px;
+
+    .number {
+      font-weight: 500 !important;
+      font-size: 14px !important;
+      line-height: 20px;
+      letter-spacing: 0.75px;
+    }
+  }
+
+  .salin {
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 17px;
+    letter-spacing: 0.75px;
+    color: $success;
+    cursor: pointer;
+  }
+}
+
+.modal-cancel-order {
+  &__body {
+    .description {
+      span {
+        &:nth-of-type(1) {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 21px;
+          text-align: center;
+          letter-spacing: 1px;
+          color: #14142B;
+        }
+
+        &:nth-of-type(2) {
+          font-weight: 500;
+          font-size: 8px;
+          line-height: 14px;
+          text-align: center;
+          letter-spacing: 1px;
+          color: #4E4B66;
+        }
+      }
+    }
+  }
+}
+
+.modal-success-cancel-order {
+  .modal-content {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+  }
+
+  &__header {
+    img {
+      margin-bottom: 16px;
+    }
+
+    span {
+      &:nth-of-type(1) {
+        font-weight: 700 !important;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: 1px;
+        color: $black-xl;
+        margin-bottom: 16px;
+      }
+
+      &:nth-of-type(2) {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: 1px;
+        color: $black-xl;
+        margin-bottom: 74px;
+      }
+    }
+  }
+}
+
+.modal-otoklix-go {
+  &__title {
+    font-size: $otoklix-font-size-md;
+    line-height: 20px;
+  }
+
+  &__subtitle {
+    font-size: 8px;
+    line-height: 12px;
+  }
+
+  &__flow {
+    div {
+      span {
+        font-size: $otoklix-font-size-xxs;
+        line-height: 16px;
+      }
+
+      img {
+        margin-right: 8px;
+      }
+
+      &:not(:last-child) {margin-bottom: 16px;}
+      display: flex;
+    }
+  }
+}

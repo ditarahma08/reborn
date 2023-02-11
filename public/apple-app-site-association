@@ -1,0 +1,15 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+             {
+                "appID": "Z35FTP65VT.com.otoklix.customerapp",
+                "paths": ["/*"]
+            },
+            {
+                "appID": "Z35FTP65VT.com.otoklix.customerapp.gits.staging",
+                "paths": ["/*"]
+            }
+        ]
+    }
+}

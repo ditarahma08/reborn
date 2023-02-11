@@ -1,0 +1,360 @@
+.workshop-detail-wrapper {
+  ::-webkit-scrollbar {
+    width: 0;
+    background-color: transparent;
+  }
+}
+
+.workshop-navbar-info {
+  &__content {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    &.--visible {
+      opacity: 1;
+    }
+  }
+
+  &__title {
+    font-size: $otoklix-font-size-sm;
+    color: $title-active;
+    font-weight: $font-weight-700;
+    max-width: 230px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__subtitle {
+    font-size: $otoklix-font-size-xxs;
+    color: $black-sm;
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    height: 1rem;
+    display: flex;
+  }
+
+  &__district {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 75px;
+  }
+}
+
+.workshop-navbar-back {
+  height: 2.5rem !important;
+  width: 2.5rem !important;
+}
+
+.workshop-navbar-vehicle {
+  &--icon {
+    .icon {
+      height: auto;
+    }
+  }
+}
+
+.workshop-section-title {
+  &::after {
+    content: '';
+    height: 1px;
+    background-color: $white-md;
+    flex-grow: 1;
+    margin-left: 0.75rem;
+  }
+}
+
+.workshop-facility-toggle {
+  height: 32px;
+}
+
+.workshop-facility-list {
+  max-height: 100px;
+  transition: all 0.5s ease;
+
+  &.--open {
+    max-height: 200px;
+    transition: all 0.5s ease;
+  }
+}
+
+.workshop-info {
+  .ws-info-text-small {
+    font-weight: normal;
+    font-size: $otoklix-font-size-xxs;
+    line-height: 15px;
+    letter-spacing: 0.75px;
+    white-space: nowrap;
+  }
+
+  .info-section {
+    h1 {
+      font-weight: bold;
+      font-size: $otoklix-font-size;
+      line-height: 24px;
+      letter-spacing: 0.75px;
+    }
+
+    .address {
+      display: flex;
+      justify-content: space-between;
+      font-weight: normal;
+      font-size: $otoklix-font-size-xxs;
+      line-height: 15px;
+      letter-spacing: 0.75px;
+    }
+  }
+}
+
+.open-hour {
+  background-color: $white-lg;
+  padding: 12px;
+
+  .text {
+    font-size: $otoklix-font-size-xxs;
+    line-height: 15px;
+    letter-spacing: 0.75px;
+  }
+
+  button {
+    font-size: $otoklix-font-size-xs;
+  }
+}
+
+.open-hour.no-data {
+  padding: 0 12px;
+}
+
+.operation-hour-sheet {
+  .close-wrapper {
+    position: absolute;
+    top: 8px;
+    right: 0;
+  }
+  
+  .close {
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
+}
+
+.review-rating {
+  h1 {
+    font-weight: bold;
+    font-size: $otoklix-font-size-md;
+    line-height: 21px;
+    letter-spacing: 0.75px;
+
+    &::after {
+      content: "";
+      height: 1px;
+      background-color: $white-md;
+      -webkit-flex-grow: 1;
+      -moz-box-flex: 1;
+      flex-grow: 1;
+      margin-left: 0.75rem;
+    }
+  }
+
+
+  a {
+    font-size: $otoklix-font-size-xxs;
+    line-height: 15px;
+    letter-spacing: 0.75px;
+  }
+
+  .rating-text {
+    font-weight: bold;
+    font-size: $otoklix-font-size;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+    color: $orange;
+  }
+
+  .level-harga {
+    font-size: $otoklix-font-size-xxs;
+    line-height: 15px;
+    letter-spacing: 0.75px;
+  }
+
+  .price-level {
+    font-weight: $font-weight-600;
+    font-size: $otoklix-font-size;
+  }
+
+  .active {
+    color: $secondary;
+  }
+}
+  
+.workshop-tab-menu {
+  padding: px2rem(8) px2rem(16);
+  font-size: $otoklix-font-size-xs;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.active {
+    color: $blue;
+    border-bottom: px2rem(3) solid $blue;
+  }
+}
+
+.scroll-spy {
+  top: px2rem(-100);
+  height: 100vh;
+}
+
+.workshop-review-section {
+  &--carousel {
+    .slick-slide {
+      width: auto !important;
+    }
+  
+    .slick-list {
+      height: 200px !important;
+    }
+  
+    .slick-track {
+      display: flex;
+    }
+  
+    .slick-dots {
+      justify-content: center;
+  
+      ul {
+        padding-left: 0;
+      }
+  
+      li {
+        margin-top: 10px;
+        background-color: $black-xs;
+        width: 4px;
+        height: 4px;
+        border-radius: 100px;
+  
+        button {
+          visibility: hidden;
+        }
+  
+        &.slick-active {
+          width: 12px !important;
+          height: 4px;
+          background-color: $primary;
+          border-radius: 100px;
+  
+        }
+      }
+    }
+  }
+  
+  &--empty {
+    .footer {
+      padding-bottom: 0 !important;
+    }
+
+    &-page {
+      height: 80vh;
+    }
+
+    &-title {
+      font-weight: 600 !important;
+      font-size: 16px;
+    }
+  }
+}
+
+.workshop-review-page {
+  &--progressbar {
+    height: 3px;
+  }
+
+  &--rating-total {
+    font-size: 32px;
+  }
+
+  &--star-icon {
+    width: 1rem;
+
+      .icon {
+        width: 1rem;
+        height: 1rem;
+      }
+  }
+}
+
+.detail-review {
+  &--label {
+    font-size: 10px;
+    color: $black-sm;
+    display: inline-block;
+  }
+  &--name {
+    font-size: 14px;
+    color: $black-xl;
+    font-weight: 700;
+  }
+  &--extra {
+    font-size: 10px;
+    color: $black-md;
+  }
+  &--ws-name {
+    font-size: 12px;
+    color: $black-md;
+    font-weight: 400;
+  }
+  &--description {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: $black-xl;
+    letter-spacing: 0.75px;
+    word-break: break-word;
+  }
+}
+
+.workshop-review-list {
+  &--card-review {
+    .card-review--content {
+      height: 80px;
+    }
+  }
+}
+
+.extra-filter {
+  .title {
+    font-weight: bold !important;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.75px;
+  }
+
+  .radio-label {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+  }
+
+  input[type="radio"] {
+    width: px2rem(24);
+    height: px2rem(24);
+  }
+
+  input[type='radio'] {
+    -webkit-appearance: none;
+    border-radius: 50%;
+    outline: none;
+    border: 1px solid #D6D8E7;
+  }
+  
+  input[type="radio"]:checked {
+    border: 6px solid $primary;
+  }
+}

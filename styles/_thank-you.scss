@@ -1,0 +1,48 @@
+.thank-you {
+  &__header {
+    span {
+      &:nth-of-type(1) {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      &:nth-of-type(2) {
+        font-size: 12px;
+        line-height: 18px;
+      }
+
+      color: #fff;
+    }
+  }
+
+  &__header.success {
+    background-color: #2B52C4;
+  }
+
+  &__header.waiting {
+    background-color: $secondary;
+  }
+
+  &__header.fail {
+    background-color: $red;
+  }
+
+  &__body {
+    position: relative;
+
+    &__detail-wrapper {
+      .label {
+        color: $neutral-80;
+      }
+    }
+    
+    .card.detail-order {
+      width: 87%;
+      position: absolute;
+      top: -40px;
+      border-radius: px2rem(8px);
+      border: none;
+      box-shadow: 0px 2px 4px -2px rgba(24, 39, 75, 0.12), 0px 4px 4px -2px rgba(24, 39, 75, 0.08);
+    }
+  }
+}

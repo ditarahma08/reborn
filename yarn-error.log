@@ -1,0 +1,101 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.22.11
+
+Node version: 
+  14.17.2
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: http://13.251.89.131:4873/axios: authorization required to access package axios
+      at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66992:18)
+      at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140763:22)
+      at Request.emit (events.js:375:28)
+      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141735:10)
+      at Request.emit (events.js:375:28)
+      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141657:12)
+      at Object.onceWrapper (events.js:481:28)
+      at IncomingMessage.emit (events.js:387:35)
+      at endReadableNT (internal/streams/readable.js:1317:12)
+      at processTicksAndRejections (internal/process/task_queues.js:82:21)
+
+npm manifest: 
+  {
+    "name": "otoklix",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "eslint ./pages ./src",
+      "fixlint": "eslint --fix ./pages ./src"
+    },
+    "dependencies": {
+      "@popperjs/core": "^2.9.2",
+      "axios": "^0.21.1",
+      "clevertap-react": "^1.0.0",
+      "copy-to-clipboard": "^3.3.1",
+      "framer-motion": "^4.1.10",
+      "google-map-react": "^2.1.9",
+      "js-cookie": "^2.2.1",
+      "libphonenumber-js": "^1.9.16",
+      "lodash": "^4.17.21",
+      "moment": "^2.29.1",
+      "next": "^10.2.3",
+      "next-pwa": "^5.2.21",
+      "nprogress": "^0.2.0",
+      "otoklix-elements": "1.4.5",
+      "react": "17.0.2",
+      "react-calendar": "^3.4.0",
+      "react-content-loader": "^6.0.3",
+      "react-custom-scrollbars-2": "^4.3.0",
+      "react-div-100vh": "^0.6.0",
+      "react-dom": "17.0.2",
+      "react-geocode": "^0.2.3",
+      "react-gtm-module": "^2.0.11",
+      "react-horizontal-scrolling-menu": "^0.7.10",
+      "react-infinite-scroller": "^1.2.4",
+      "react-lottie-player": "^1.3.3",
+      "react-otp-input": "^2.3.0",
+      "react-popper": "^2.2.5",
+      "react-select-search": "^3.0.6",
+      "react-slick": "^0.28.1",
+      "react-spring-bottom-sheet": "^3.2.1",
+      "react-tiny-popover": "^6.0.5",
+      "react-toggle": "^4.1.2",
+      "react-tooltip": "^4.2.18",
+      "react-transition-group": "^4.4.1",
+      "react-web-share": "^1.1.0",
+      "react-whatsapp": "^0.2.1",
+      "slick-carousel": "^1.8.1",
+      "smooth-scroll-into-view-if-needed": "^1.1.32",
+      "use-places-autocomplete": "^1.9.4",
+      "validator": "^13.6.0"
+    },
+    "devDependencies": {
+      "eslint": "^7.23.0",
+      "eslint-config-prettier": "^8.1.0",
+      "eslint-plugin-jsx-a11y": "^6.4.1",
+      "eslint-plugin-prettier": "^3.3.1",
+      "eslint-plugin-react": "^7.23.1",
+      "eslint-plugin-react-hooks": "^4.2.0",
+      "eslint-plugin-simple-import-sort": "^7.0.0",
+      "next-transpile-modules": "^6.4.0",
+      "prettier": "^2.2.1",
+      "sass": "^1.32.8"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

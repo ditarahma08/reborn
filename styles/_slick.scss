@@ -1,0 +1,50 @@
+.slick-slider {
+  padding-left: 0;
+  padding-right: 0;
+
+  .slick-slide > div {
+    margin-right: px2rem(16);
+  }
+
+  .slick-list {
+    padding: 0 20% 0 0 !important;
+  }
+
+  .slick-dots {
+    position: unset;
+    bottom: unset;
+    display: flex;
+
+    li {
+      width: 8px;
+    }
+
+    li button:before {
+      font-size: px2rem(12);
+      color: #c0c0c0;
+      opacity: 1;
+    }
+
+    li.slick-active button:before {
+      color: $secondary;
+    }
+  }
+}
+
+.garage-slider {
+  .slick-slide > div {
+    margin-right: 0;
+  }
+}
+
+.left-slick-container {
+  .slick-list {
+    padding: 0 20% 0 px2rem(13) !important;
+  }
+}
+
+.small-review-wrapper {
+  .slick-list {
+    padding: 0 20% 10% px2rem(13) !important;
+  }
+}

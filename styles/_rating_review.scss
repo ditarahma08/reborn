@@ -1,0 +1,48 @@
+.rating-form {
+    &--workshop-image {
+        img {
+         border-radius: 8px;
+        }
+    }
+
+    &--icon-verified {
+        .icon {
+            height: 1rem;
+        }
+    }
+
+    &--truncate-text {
+        max-width: 225px;
+        display: block;
+    }
+
+    &--rating-star {
+        border-top: 1px solid $white-md;
+        border-bottom: 1px solid $white-md;
+    }
+
+    &--order-review {
+        background-color: $white-lg;
+        border-radius: 8px;
+    }
+
+    &--order-package-name {
+        max-width: 150px;
+    }
+
+    &--otopoints-info {
+        background-color: $yellow-light;
+        border-radius: 8px;
+    }
+
+    &--input-review {
+        border-color: $primary !important;
+    }
+
+    &--bottomsheet-form {
+        ::-webkit-scrollbar {
+            width: 0;
+            background-color: transparent;
+        }
+    }
+}
